@@ -3,13 +3,13 @@
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    int n, year = 0, e, population; //n=процент прироста 
+    int n, year = 0, e, population; 
     printf("Enter n: \n");
     
     do {
         scanf_s("%d", &n);
         
-    } while (n <= 0); // пока натуральное число, если 0 то ввод повторится
+    } while (n <= 0);
 
     printf("Enter population: \n");
     do {
@@ -23,6 +23,6 @@ int main()
         population += (1 * 1.0 / n) * population;
         year = i;
     }
-    printf("Население увеличится втрое примерно через %d лет", year); // примерное количество лет(2 года и х месяцев)
+    printf("Население увеличится втрое примерно через %d лет", year); 
     return 0;
 }
